@@ -8,6 +8,8 @@ import java.util.Scanner;
 public class StartManager {
 
     public static void main(String[] args) {
+        System.out.println("张三");
+        System.out.println("张三");
         Scanner sc = new Scanner(System.in);
         ArrayList<Student> listObj = new ArrayList<>();
         // 给无线循环指定一个名字结束循环
@@ -83,7 +85,6 @@ public class StartManager {
             String id = obj.getSid();
             if(id.equals(sid)){
                 index = i;
-                i--; // 删除一个元素 指针往前移一步
                 break;
             }
         }
@@ -142,12 +143,12 @@ public class StartManager {
         //判断是否有重复的id学号
         String sid;
         System.out.println("请输入学号： ");
-          lo:while (true){
+          while (true){
                // 1. 录入的提示信息
                sid = sc.next();
                int index = getIndex(listObj,sid);
                if(index == -1){
-                   break lo;
+                   break;
                }else {
                    System.out.println("学号已被占用请重新输入学号： ");
                }
