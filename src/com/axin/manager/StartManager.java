@@ -132,8 +132,7 @@ public class StartManager {
         }
         System.out.println("学号    姓名    年龄    生日");
         //循环查看集合数据
-        for (int i = 0; i < listObj.size(); i++) {
-            Student obj = listObj.get(i);
+        for (Student obj : listObj) {
             System.out.println(obj.getSid() + "    " + obj.getName() + "    " + obj.getAge() + "    " + obj.getBirthday());
         }
     }
