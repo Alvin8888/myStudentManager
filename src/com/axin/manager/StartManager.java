@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class StartManager {
 
     public static void main(String[] args) {
-        System.out.println("张三，王麻子");
         Scanner sc = new Scanner(System.in);
         ArrayList<Student> listObj = new ArrayList<>();
         // 给无线循环指定一个名字结束循环
